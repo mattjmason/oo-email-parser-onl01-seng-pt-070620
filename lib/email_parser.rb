@@ -10,7 +10,9 @@ class EmailParser
       self.emails = emails
   end 
     
-    
+  def parse 
+    results = self.emails.scan(/\w\w*@\w\w*\.\w\w*)/) 
+  end 
   
 end 
 
